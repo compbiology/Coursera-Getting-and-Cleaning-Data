@@ -40,7 +40,7 @@ class assignment.
 * cut out the activity column from the joined frame to leave a two col frame with subjects and activity labels
 * tacked this onto the right side of the frame from question2 to answer question3
 * replaced existing hypens  and commas with underscores using gsub to answer question4.
-* sorted  the frame from question4  first by activity_label and then by subject using arrange to get the tidy set.
+* computed the mean of the entries in the columns of quest 4 for each uniq subject activity pair
 
 
 

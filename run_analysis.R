@@ -65,23 +65,20 @@ data_question3<-bind_cols(data_question2,join_data_trim)
 #   is silly; the whole point of capitalizing the first letter
 #   of each word in a variable name or using underscores
 #   between words is to make it easier  to see where 
-#   each word begins eliminating them makes it HARDER 
+#   each word begins; eliminating them makes it HARDER 
 #   to read; I only replaced existing hypens  and commas, 
-#   that might  interfere with parsing, with underscores
+#   which might  interfere with parsing, with underscores
 #############################################
 data_question4<-data_question3
 new_names<-gsub("-|,","_",names(data_question3))
 names(data_question4)<-new_names
 
 #############################################
-#  the "average of each variable" has already been 
-#  computed; as I read the question, I don't need to use 
-#  something like ddply to compute more means, I just 
-#  need to sort  first by activity_label and then by subject, 
-#  which I have done using arrange 
+#  now average the entries in the mean and sd columns 
+#  for each unique subject/activity_label pair 
 #############################################
-data_question5<-arrange(data_question4,activity_label,subject)
-
+#data_question5<-arrange(data_question4,activity_label,subject)
+data_question5<- data_question4  %>% group_by(subject,activity_label) %>% summarize_each(funs(mean))
 write.table(data_question5, file = "tidy_data.csv", sep = ",")
 
 
