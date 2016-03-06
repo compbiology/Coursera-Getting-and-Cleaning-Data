@@ -1,8 +1,8 @@
-###Readme file to accompany the Coursera/JHU Getting and Cleaning Data class, Week 4 Assignment
+####Readme file to accompany the Coursera/JHU Getting and Cleaning Data class, Week 4 Assignment
 
 
-####Todd Taylor
-####2/29/16
+#####Todd Taylor
+#####2/29/16
 
 
 There is only one script for this assignment, run_analysis.R. It must sit in the directory UCI HAR Dataset

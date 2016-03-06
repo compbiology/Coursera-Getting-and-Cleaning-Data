@@ -1,8 +1,8 @@
-#Codebook file to accompany the Coursera/JHU Getting and Cleaning Data class, Week 4 Assignment
+####Codebook file to accompany the Coursera/JHU Getting and Cleaning Data class, Week 4 Assignment
 
 
-##Todd Taylor
-##2/29/16
+#####Todd Taylor
+#####2/29/16
 
 
 This file describes changes and merges made to the data files:
