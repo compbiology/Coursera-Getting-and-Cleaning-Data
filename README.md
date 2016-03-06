@@ -1,8 +1,8 @@
-#Readme file to accompany the Coursera/JHU Getting and Cleaning Data class, Week 4 Assignment
+###Readme file to accompany the Coursera/JHU Getting and Cleaning Data class, Week 4 Assignment
 
 
-##Todd Taylor
-##2/29/16
+####Todd Taylor
+####2/29/16
 
 
 There is only one script for this assignment, run_analysis.R. It must sit in the directory UCI HAR Dataset
@@ -15,3 +15,8 @@ To run simply open R and type source("run_analysis.R"). Note that the R packages
 data.table must be installed in order to run the script. It writes only one file called tidy_data.csv. 
 But intermediate results that answer the assignment questions can be viewed while in R in the data 
 frames named: data_question1, data_question2, ..., data_question5.
+
+
+
+
+
